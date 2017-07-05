@@ -20,11 +20,15 @@ class Repo {
 }
 
 def repos = [
-    new Repo("writing-gradle-plugins", "git@github.com:gradle-guides/writing-gradle-plugins.git")
+    new Repo("writing-gradle-plugins", "git@github.com:gradle-guides/writing-gradle-plugins.git"),
+    new Repo("writing-gradle-tasks", "git@github.com:gradle-guides/writing-gradle-tasks.git"),
+    new Repo("publishing-plugins-to-gradle-plugin-portal", "git@github.com:gradle-guides/publishing-plugins-to-gradle-plugin-portal.git"),
+    new Repo("implementing-gradle-plugins", "git@github.com:gradle-guides/implementing-gradle-plugins.git"),
+    new Repo("designing-gradle-plugins", "git@github.com:gradle-guides/designing-gradle-plugins.git")
 ]
 
 repos.each { r ->
-    def repoDir = file(r.name)
+    def repoDir = file("repos/$r.name")
     if (!repoDir.exists()) {
         println "Checking out $r.url"
         repoDir.mkdirs()
