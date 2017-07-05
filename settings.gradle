@@ -20,6 +20,7 @@ class Repo {
 }
 
 def repos = [
+    new Repo("gradle", "git@github.com:gradle/gradle.git"),
     new Repo("writing-gradle-plugins", "git@github.com:gradle-guides/writing-gradle-plugins.git"),
     new Repo("writing-gradle-tasks", "git@github.com:gradle-guides/writing-gradle-tasks.git"),
     new Repo("publishing-plugins-to-gradle-plugin-portal", "git@github.com:gradle-guides/publishing-plugins-to-gradle-plugin-portal.git"),
