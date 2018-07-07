@@ -68,11 +68,11 @@ repos.forEach { r ->
             val t = tasks.create("update-${r.name}") {
                 doLast {
                     println("Updating ${r.url}")
-                    val git = Git(FileRepository(repoDir))
-                    val fetchCommand = git.fetch()
-//                    fetchCommand.setRemoteBranchName("master")
-//                    fetchCommand.setFastForward(MergeCommand.FastForwardMode.FF_ONLY)
-                    fetchCommand.call()
+                    val git = Git.open(repoDir)
+                    val pullCommand = git.pull()
+                    pullCommand.setRebase(true)
+                    pullCommand.setFastForward(MergeCommand.FastForwardMode.FF_ONLY)
+                    pullCommand.call()
                 }
             }
             updateTask!!.dependsOn(t)
