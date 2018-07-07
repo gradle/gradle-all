@@ -24,19 +24,38 @@ val repos = listOf(
         // Guides
 
         Repo("migrating-build-logic-from-groovy-to-kotlin", "git@github.com:gradle-guides/migrating-build-logic-from-groovy-to-kotlin.git"),
+        Repo("creating-build-scans", "git@github.com:gradle-guides/creating-build-scans.git"),
+        Repo("building-java-web-applications", "git@github.com:gradle-guides/building-java-web-applications.git"),
         Repo("using-an-existing-gradle-build", "git@github.com:gradle-guides/using-an-existing-gradle-build.git"),
         Repo("creating-new-gradle-builds", "git@github.com:gradle-guides/creating-new-gradle-builds.git"),
+        Repo("performance", "git@github.com:gradle-guides/performance.git"),
+        Repo("using-build-cache", "git@github.com:gradle-guides/using-build-cache.git"),
         // Not included: wrong root project name
         Repo("creating-multi-project-builds", "git@github.com:gradle-guides/creating-multi-project-builds.git", false),
         Repo("building-java-libraries", "git@github.com:gradle-guides/building-java-libraries.git"),
+        Repo("building-java-applications", "git@github.com:gradle-guides/building-java-applications.git"),
+        Repo("consuming-jvm-libraries", "git@github.com:gradle-guides/consuming-jvm-libraries.git"),
         Repo("building-scala-libraries", "git@github.com:gradle-guides/building-scala-libraries.git"),
+        Repo("building-kotlin-jvm-libraries", "git@github.com:gradle-guides/building-kotlin-jvm-libraries.git"),
+        Repo("building-java-9-modules", "git@github.com:gradle-guides/building-java-9-modules.git"),
+        Repo("building-groovy-libraries", "git@github.com:gradle-guides/building-groovy-libraries.git"),
+        Repo("building-cpp-libraries", "git@github.com:gradle-guides/building-cpp-libraries.git"),
+        Repo("building-cpp-executables", "git@github.com:gradle-guides/building-cpp-executables.git"),
         Repo("writing-gradle-plugins", "git@github.com:gradle-guides/writing-gradle-plugins.git"),
         Repo("writing-gradle-tasks", "git@github.com:gradle-guides/writing-gradle-tasks.git"),
+        Repo("testing-gradle-plugins", "git@github.com:gradle-guides/testing-gradle-plugins.git"),
         Repo("publishing-plugins-to-gradle-plugin-portal", "git@github.com:gradle-guides/publishing-plugins-to-gradle-plugin-portal.git"),
         Repo("implementing-gradle-plugins", "git@github.com:gradle-guides/implementing-gradle-plugins.git"),
         Repo("designing-gradle-plugins", "git@github.com:gradle-guides/designing-gradle-plugins.git"),
         Repo("gradle-site-plugin", "git@github.com:gradle-guides/gradle-site-plugin.git"),
-        Repo("gradle-guides-plugin", "git@github.com:gradle-guides/gradle-guides-plugin.git")
+        Repo("gradle-guides-plugin", "git@github.com:gradle-guides/gradle-guides-plugin.git"),
+        Repo("tutorial-template", "git@github.com:gradle-guides/tutorial-template.git"),
+        Repo("writing-getting-started-guides", "git@github.com:gradle-guides/writing-getting-started-guides.git"),
+        Repo("running-webpack-with-gradle", "git@github.com:gradle-guides/running-webpack-with-gradle.git"),
+        Repo("migrating-from-maven", "git@github.com:gradle-guides/migrating-from-maven.git"),
+        Repo("executing-gradle-builds-on-teamcity", "git@github.com:gradle-guides/executing-gradle-builds-on-teamcity.git"),
+        Repo("executing-gradle-builds-on-travisci", "git@github.com:gradle-guides/executing-gradle-builds-on-travisci.git"),
+        Repo("executing-gradle-builds-on-jenkins", "git@github.com:gradle-guides/executing-gradle-builds-on-jenkins.git")
 )
 
 var checkOutTask: Task? = null
