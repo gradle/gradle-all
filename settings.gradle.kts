@@ -20,6 +20,11 @@ val repos = listOf(
         Repo("gradle", "git@github.com:gradle/gradle.git"),
         // Not included: need to use develop branch
         Repo("kotlin-dsl", "git@github.com:gradle/kotlin-dsl.git", false),
+        Repo("gradle-native", "git@github.com:gradle/gradle-native.git"),
+        Repo("exemplar", "git@github.com:gradle/exemplar.git"),
+        Repo("dependency-management-samples", "git@github.com:gradle/dependency-management-samples.git"),
+        // Not included: needs fix for plugin resolution
+        Repo("native-samples", "git@github.com:gradle/native-samples.git", false),
 
         // Guides
 
@@ -41,15 +46,24 @@ val repos = listOf(
         Repo("building-groovy-libraries", "git@github.com:gradle-guides/building-groovy-libraries.git"),
         Repo("building-cpp-libraries", "git@github.com:gradle-guides/building-cpp-libraries.git"),
         Repo("building-cpp-executables", "git@github.com:gradle-guides/building-cpp-executables.git"),
+        Repo("building-c-executables", "git@github.com:gradle-guides/building-c-executables.git"),
+        Repo("building-android-apps", "git@github.com:gradle-guides/building-android-apps.git"),
         Repo("writing-gradle-plugins", "git@github.com:gradle-guides/writing-gradle-plugins.git"),
         Repo("writing-gradle-tasks", "git@github.com:gradle-guides/writing-gradle-tasks.git"),
         Repo("testing-gradle-plugins", "git@github.com:gradle-guides/testing-gradle-plugins.git"),
         Repo("publishing-plugins-to-gradle-plugin-portal", "git@github.com:gradle-guides/publishing-plugins-to-gradle-plugin-portal.git"),
         Repo("implementing-gradle-plugins", "git@github.com:gradle-guides/implementing-gradle-plugins.git"),
         Repo("designing-gradle-plugins", "git@github.com:gradle-guides/designing-gradle-plugins.git"),
+        Repo("using-the-worker-api", "git@github.com:gradle-guides/using-the-worker-api.git"),
         Repo("gradle-site-plugin", "git@github.com:gradle-guides/gradle-site-plugin.git"),
         Repo("gradle-guides-plugin", "git@github.com:gradle-guides/gradle-guides-plugin.git"),
+        Repo("guides-test-fixtures", "git@github.com:gradle-guides/guides-test-fixtures.git"),
         Repo("tutorial-template", "git@github.com:gradle-guides/tutorial-template.git"),
+        Repo("topical-template", "git@github.com:gradle-guides/topical-template.git"),
+        // Not included: mismatched build scan plugin version
+        Repo("gs-template", "git@github.com:gradle-guides/gs-template.git", false),
+        Repo("style-guide", "git@github.com:gradle-guides/style-guide.git"),
+        Repo("greeting-plugin-example", "git@github.com:gradle-guides/greeting-plugin-example.git"),
         Repo("writing-getting-started-guides", "git@github.com:gradle-guides/writing-getting-started-guides.git"),
         Repo("running-webpack-with-gradle", "git@github.com:gradle-guides/running-webpack-with-gradle.git"),
         Repo("migrating-from-maven", "git@github.com:gradle-guides/migrating-from-maven.git"),
